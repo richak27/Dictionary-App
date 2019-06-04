@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:id="@+id/tw"
+        android:layout_width="292dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Word"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tm"
+        android:layout_width="282dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Meaning"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw" />
+
+    <Button
+        android:id="@+id/updatebt"
+        android:layout_width="186dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="172dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/updatettt"
+        android:onClick="onUpdateClick"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tm" />
+
+</android.support.constraint.ConstraintLayout>
